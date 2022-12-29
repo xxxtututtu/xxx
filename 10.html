@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/logo.ico" />
+    <title>第十次作业</title>
+</head>
+<body>
+    <input id="ori" type="text" placeholder="源文本">
+    <button onclick="copyNow()">复制</button>
+    <input id="co" type="text" placeholder="复制文本">
+    <div id="alerttext"></div>
+    <script>
+        const ori = document.getElementById('ori');
+        const co = document.getElementById('co');
+        const alerttext = document.getElementById('alertText');
+
+        copyNow = function() {
+            if (ori.value.length == 0) {
+                alerttext.innerText = '无';
+            } else {
+                co.value = ori.value;
+                alerttext.innerText = '完成';
+            }
+        }
+    </script>
+</body>
+</html>
