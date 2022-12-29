@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 80%;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+    <table>
+        <tr>
+            <td>姓名：</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td>性别</td>
+            <td id="sex">
+                <label><input type="radio" name="sex">男</label>
+                <label><input type="radio" name="sex">女</label>
+            </td>
+        </tr>
+        <tr>
+            <td>血型</td>
+            <td> <label><input type="radio" name="blood">A</label>
+                <label><input type="radio" name="blood">B</label>
+                <label><input type="radio" name="blood">AB</label>
+                <label><input type="radio" name="blood">O</label>
+            </td>
+        </tr>
+        <tr>
+            <td>性格</td>
+            <td>
+                <label><input type="checkbox">温柔腼腆</label>
+                <label><input type="checkbox">热情开朗</label>
+                <label><input type="checkbox">细腻敏感</label>
+            </td>
+        </tr>
+        <tr>
+            <td>文件：</td>
+            <td><input type="file"></td>
+        </tr>
+        <tr>
+            <td>简介：</td>
+            <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <td>城市：</td>
+            <td><select name="" id="">
+                    <option value="">四川</option>
+                    <option value="">重庆</option>
+                    <option value="">湖南</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td colspan="2" >
+                <button onclick="myonclick()" >提交
+                <button type="reset" >重置
+            </td>
+        </tr>
+    </table>
+</form>
+    <script>
+        function myonclick(){
+            
+        }
+    </script>
+</body>
+
+</html>
